@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="style/style.css">
 		<title>simple_psd_template</title>
 	</head>
 	<body>
@@ -185,7 +185,7 @@
 			<div class="footer_contact-flex">
 				<form action="#">
 					<input type="text" placeholder="Your name:" required>
-					<input type="email" placeholder="Your email:" required>
+					<input type="email" placeholder="Your email:" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
 					<textarea name="coment" placeholder="Your message:" required></textarea>
 					<input class="submit" type="submit" value="Send">
 				</form>
