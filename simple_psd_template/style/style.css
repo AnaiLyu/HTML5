@@ -49,7 +49,7 @@ header{
 }
 .header_left ul li:before{
 	content: ' ';
-	background: url(Img/check_icon.png);
+	background: url(../Img/check_icon.png);
 	position: absolute;
 	top: 8px;
 	left: -35px;
@@ -449,22 +449,22 @@ footer .footer_contact{
 	left: -40px;
 }
 .contacts_skype:before{
-	background: url(Img/skype_icon.png) no-repeat;
+	background: url(../Img/skype_icon.png) no-repeat;
 	width: 24px;
 	height: 26px;
 }
 .contacts_icq:before{
-	background: url(Img/icq_icon.png) no-repeat;
+	background: url(../Img/icq_icon.png) no-repeat;
 	width: 26px;
 	height: 26px;
 }
 .contacts_mail:before{
-	background: url(Img/email_icon.png) no-repeat;
+	background: url(../Img/email_icon.png) no-repeat;
 	width: 24px;
 	height: 24px;
 }
 .contacts_tel:before{
-	background: url(Img/phone_icon.png) no-repeat;
+	background: url(../Img/phone_icon.png) no-repeat;
 	width: 24px;
 	height: 23px;
 }
