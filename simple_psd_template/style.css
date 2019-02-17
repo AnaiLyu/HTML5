@@ -14,7 +14,6 @@ a{
 img{
 	display: block;
 }
-
 .float_left{
 	float: left;
 }
@@ -24,7 +23,6 @@ img{
 .clr{
 	clear: both;
 }
-
 header{
 	height: 273px;
 	background: #445162;
@@ -54,20 +52,17 @@ header{
 	background: url(Img/check_icon.png);
 	position: absolute;
 	top: 8px;
-	left: 0;
+	left: -35px;
 	display: block;
 	width: 25px;
 	height: 19px;
-	margin-left: -35px;
 }
 .header_right{
 	background: #fff;
 }
-
 main{
 	padding: 50px;
 }
-
 main > article{
 	min-height: 245px;
 	margin-bottom: 50px;
@@ -95,13 +90,38 @@ article video{
 	display: block;
 	background-color: #445161;
 }
-
-
 .pluses_product{
 	margin: 0 -50px;
 	padding: 50px 50px;
 	background: #f5f5f5;
-	height: 350px;
+	min-height: 350px;
+}
+.pluses_product summary{
+	display: block;
+	margin-left: 40px;
+	position: relative;
+}
+.pluses_product summary::-webkit-details-marker{
+	display: none;
+}
+.pluses_product summary:before{
+	content: "+";
+	background: #445161;
+	color: #fff; 
+	width: 32px;
+	height: 32px;
+	display: block;
+	text-align: center;
+	font-size: 2em;
+	line-height: 30px;
+	margin: -5px 10px 0 0;
+	position: absolute;
+	top: 10px;
+	left: -40px;
+}
+.pluses_product details[open] > summary::before {
+	content: '-';
+	line-height: 25px;
 }
 .pluses_product h3{
 	text-align: center;
@@ -128,10 +148,9 @@ article video{
 	line-height: 24px;
 	text-align: left;
 }
-
-
 .scrinshots{
 	min-height: 455px;
+	margin-bottom: 50px;
 }
 .scrinshots h3{
 	color: #445161;
@@ -167,11 +186,9 @@ article video{
 	width: 98%;
 	word-break: break-all;
 }
-
-
 .reviews{
 	margin: 0 -50px;
-	min-height: 350px;
+	min-height: 310px;
 	background: #f5f5f5;
 	padding: 50px;
 }
@@ -214,22 +231,8 @@ article video{
 	line-height: 18px;
 	text-align: left;
 }
-
-
-
-
 .buy_now{
-	padding: 0 95px 50px;
-}
-.buy_now h3{
-	color:#445161;
-	font-size: 30px;
-	font-weight: 400;
-	line-height: 36px;
-	text-align: center;
-	margin-bottom: 30px;
-}
-.buy_now-flex{
+	padding: 50px 95px 0;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -238,6 +241,20 @@ article video{
 	-ms-align-items: flex-end;
 	align-items: flex-end;
 	justify-content: space-around;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+.buy_now h3{
+	color:#445161;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 36px;
+	text-align: center;
+	margin-bottom: 30px;
+	width: 100%;
 }
 .buy_now-div{
 	background: #425060;
@@ -296,9 +313,6 @@ article video{
 	background-color: #425060;
 	color: #fff;
 }
-
-
-
 footer .footer_contact{
 	background: #445162;
 	color: #fff;
@@ -311,7 +325,6 @@ footer .footer_contact{
 	text-align: center;
 	margin-bottom: 30px;
 }
-
 .footer_contact-flex{
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -320,7 +333,6 @@ footer .footer_contact{
 	display: flex;
 	justify-content: center;
 }
-
 .footer_contact-flex form{
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -350,7 +362,7 @@ footer .footer_contact{
 	border-radius: 5px;
 	background-color: #ffffff;
 	width: 490px;
-	height: 170px;
+	height: 160px;
 	margin: 0 20px 20px 0;
 	resize: none;
 	color: #445162;
@@ -358,7 +370,7 @@ footer .footer_contact{
 	font-weight: 400;
 	line-height: 24px;
 	text-align: left;
-	padding-left: 10px;
+	padding: 10px 0 0 10px;
 }
 .footer_contact-flex .submit{
 	border-radius: 5px;
@@ -374,30 +386,98 @@ footer .footer_contact{
 	margin: 0;
 	align-self: center;
 }
-
+.footer_contact-flex .submit:hover{
+	box-shadow: 0 0 2px 1px #fff;
+	background-color: #d9dcdf;
+}
+.footer_contact-flex .submit:active{
+	border-radius: 5px;
+	box-shadow: 0 0 3px 2px #fff;
+	background-color: #425060;
+	color: #fff;
+}
+.contacts{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+}
 .contacts li{
 	margin: 0 0 30px 75px;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 24px;
 	text-align: left;
-	list-style-image: url(Img/skype_icon.png);
+	list-style-type: none;
+	position: relative;
 }
-.contacts a{
-	display: inline-block;
+.contacts li:before{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -40px;
+}
+.contacts_skype:before{
 	background: url(Img/skype_icon.png) no-repeat;
-	width: 32px;
-	height: 32px;
+	width: 24px;
+	height: 26px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
+.contacts_icq:before{
+	background: url(Img/icq_icon.png) no-repeat;
+	width: 26px;
+	height: 26px;
+}
+.contacts_mail:before{
+	background: url(Img/email_icon.png) no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.contacts_tel:before{
+	background: url(Img/phone_icon.png) no-repeat;
+	width: 24px;
+	height: 23px;
+}
+.contacts-social_links{
+	margin-left: 30px;
+}
+.contacts-social_links a{
+	background: #fff;
+	border-radius: 50%;
+	display: inline-block;
+	width: 42px;
+	height: 42px;
+	text-decoration: none;
+	color: #445162;
+	text-align: center;
+	line-height: 40px;
+	margin-right: 5px;
+	font-size: 20px;
+}
+.contacts-social_links a:hover{
+	box-shadow: 0 0 2px 1px #fff;
+	background-color: #d9dcdf;
+}
+.contacts-social_links a:active{
+	box-shadow: 0 0 3px 2px #fff;
+	background-color: #425060;
+	color: #fff;
+}
+.copyright{
+	text-align: center;
+	padding: 5px 0;
+	color: #445162;
+	font-size: 12px;
+	font-weight: 400;
+	letter-spacing: 0.3px;
+	line-height: 24px;
+}
+.copyright span{
+	text-transform: uppercase;
+}
