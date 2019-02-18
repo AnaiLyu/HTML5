@@ -23,6 +23,16 @@ img{
 .clr{
 	clear: both;
 }
+.video_bg{ 
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+}
 header{
 	height: 273px;
 	background: #445162;
@@ -59,6 +69,7 @@ header{
 }
 .header_right{
 	background: #fff;
+	outline: 1px solid #fff;
 }
 main{
 	padding: 50px;
@@ -89,6 +100,8 @@ article .about_product p{
 article video{
 	display: block;
 	background-color: #445161;
+	border: 1px solid #445161;
+	border-bottom: none;
 }
 .pluses_product{
 	margin: 0 -50px;
