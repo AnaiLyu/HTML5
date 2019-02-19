@@ -4,10 +4,11 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="style/style.css">
 		<title>simple_psd_template</title>
 	</head>
 	<body>
+		<video src="video/Background_Blue.mp4" class="video_bg" autoplay muted loop></video>
 		<header>
 			<div class="header_left float_left">
 				<h1>Product name</h1>
@@ -18,7 +19,7 @@
 					<li>Associate the page with the payment system</li>
 				</ul>
 			</div>
-			<img class="header_right float_right" src="#" alt="image" title="image" width="469" height="214">
+			<img src="Img/14.33.59.png" class="header_right float_right" alt="image" title="image" width="469" height="214">
 		</header>
 		<main>
 			<article>
@@ -27,7 +28,7 @@
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facilis fuga, illo at. Natus eos, eligendi illum rerum omnis porro ex, magni, explicabo veniam incidunt in quam sapiente ut ipsum.</p>
 					<p>Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</p>
 				</div>
-			<video class="float_right" src="#" alt="video" title="video" width="430" height="245"></video>
+			<video class="float_right" src="video/stratovariors.mp4" alt="video" autoplay muted loop controls title="video" width="428" height="243"></video>
 		</article>
 		<section class="pluses_product">
 			<h3>Dignity and pluses product</h3>
@@ -185,7 +186,7 @@
 			<div class="footer_contact-flex">
 				<form action="#">
 					<input type="text" placeholder="Your name:" required>
-					<input type="email" placeholder="Your email:" required>
+					<input type="email" placeholder="Your email:" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
 					<textarea name="coment" placeholder="Your message:" required></textarea>
 					<input class="submit" type="submit" value="Send">
 				</form>
