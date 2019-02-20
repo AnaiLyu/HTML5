@@ -36,6 +36,7 @@ img{
 header{
 	height: 273px;
 	background: #445162;
+	background: linear-gradient(to bottom, #445162 0%, #566271 70%, #697381 100%);
 	padding: 50px 50px 0 50px;
 	color: #fff;
 }
@@ -109,6 +110,11 @@ article video{
 	background: #f5f5f5;
 	min-height: 350px;
 }
+.pluses_product:after{
+	content: '';
+	display: block;
+	clear: both;
+}
 .pluses_product summary{
 	display: block;
 	margin-left: 40px;
@@ -179,8 +185,12 @@ article video{
 .scrinshots figure{
 	margin-bottom: 30px;
 }
+.scrinshots figure:hover{
+	background: #f5f5f5;
+}
 .scrinshots img{
 	background-color: #445161;
+	background: radial-gradient(circle closest-side at 40% 40%, #697381 0%, #566271 40%, #445161 100%);
 	margin-right: 15px;
 }
 .scrinshots_description{
@@ -221,6 +231,7 @@ article video{
 }
 .reviews img{
 	background-color: #445161;
+	background: radial-gradient(circle closest-side at center, #697381, #445161);
 	border-radius: 50%;
 	margin-top: 5px;
 }
@@ -340,6 +351,7 @@ article video{
 }
 footer .footer_contact{
 	background: #445162;
+	background: linear-gradient(to top, #445162 0%, #566271 70%, #697381 100%);
 	color: #fff;
 	padding: 50px 0;
 }
