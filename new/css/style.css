@@ -1,4 +1,39 @@
-@import url(font.css);
+@font-face {
+	font-family: Raleway-Bold;
+	src: url(../fonts/Raleway/Raleway-Bold.ttf);
+}
+@font-face {
+	font-family: Raleway-ExtraBold;
+	src: url(../fonts/Raleway/Raleway-ExtraBold.ttf);
+}
+@font-face {
+	font-family: Raleway-Medium;
+	src: url(../fonts/Raleway/Raleway-Medium.ttf);
+}
+@font-face {
+	font-family: Raleway-Regular;
+	src: url(../fonts/Raleway/Raleway-Regular.ttf);
+}
+@font-face {
+	font-family: Raleway-SemiBold;
+	src: url(../fonts/Raleway/Raleway-SemiBold.ttf);
+}
+@font-face {
+	font-family: Montserrat-ExtraLight;
+	src: url(../fonts/Montserrat/Montserrat-ExtraLight.ttf);
+}
+@font-face {
+	font-family: Montserrat-Light;
+	src: url(../fonts/Montserrat/Montserrat-Light.ttf);
+}
+@font-face {
+	font-family: Montserrat-Regular;
+	src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+}
+@font-face {
+	font-family: Roboto-Regular;
+	src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
 body{
 	width: 1920px;
 	margin: 0 auto;
@@ -9,30 +44,277 @@ a{
 .uppercase{
 	text-transform: uppercase;
 }
+
+.header_slider a, img, input{
+	color: #fff;
+}
 .header_slider{
 	background-color: #f4f5f8;
 	background-color: rgba(17, 17, 17, 0.7);
+	background-image: url(../img/header.jpg);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-blend-mode: overlay;
+	padding: 40px 150px 40px 150px;
+	position: relative;
+}
+.header_arrows{
+	width: 40px;
+	height: 73px;
+	fill: #fff;
+	padding: 5px;
+}
+.header_arrows:hover{
+	fill: #d3c1ad;
+}
+.header_arrows:active{
+	fill: #27231E;
+}
+.header_arrows-left{
+	position: absolute;
+	top: 45%;
+	left: 8%;
+}
+.header_arrows-right{
+	transform: scale(-1, 1);
+	position: absolute;
+	top: 45%;
+	right: 8%;
+}
+.header-main{
+	width: 1170px;
+	margin: auto;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+	padding: 8px 0;
+	margin-bottom: 285px;
+}
+.logo{
+	font-family: 'Raleway-Regular', sans-serif;
+	font-size: 34px;
+	font-weight: 400;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+}
+.logo_svg{
+	fill: #fff;
+}
+.logo:hover{
+	color: #c7b29a;
+}
+.logo:hover .logo_svg{
+	fill: #c7b29a;
+}
+.logo:active{
+	color: #27231E;
+}
+.logo:active .logo_svg{
+	fill: #27231E;
+}
+.header_menu{
+	font-family: 'Montserrat-Light', sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	margin-left: 100px;
+}
+.header_menu a{
+	display: inline-block;
+	padding: 15px;
+}
+.header_menu a:hover{
+	color: #c7b29a;
+}
+.header_menu a:active{
+	color: #13110F;
+	text-shadow: 0 0 5px #fff;
+}
+.header_icon-cfrt{
+	fill: #fff;
+	stroke: #fff;
+}
+.header_icon-cfrt:hover{
+	fill: #c7b29a;
+	stroke: #c7b29a;
+}
+.header_icon-cfrt:active{
+	fill: #13110F;
+	stroke: #13110F;
+	box-shadow: 0 0 5px #fff;
+}
+.header_search-svg{
+	fill: #fff;
+	stroke: #fff;
+	margin-top: 5px;
+	cursor: pointer;
+}
+.header_search input[type="search"]{
+	display: none;
+	position: relative;
+	width: 200px;
+}
+.header_search:hover input[type="search"]{
+	display: block;
+	position: absolute;
+	z-index: 10;
+}
+.header_search input[type="search"]:focus{
+	display: block;
+	position: absolute;
+	z-index: 10;
+}
+.header_slogan{
+	width: 590px;
+	margin: 0 auto 260px auto;
 }
 .header_slogan-span{
 	display: block;
-	font-family: Raleway;
+	font-family: 'Raleway-Medium', sans-serif;
 	color: #ffffff;
 	font-size: 36px;
 	font-weight: 500;
 	text-align: center;
+	line-height: 20px;
 }
 .header_slogan h1{
-	font-family: Raleway;
+	font-family: 'Raleway-Bold', sans-serif;
 	color: #ffffff;
 	font-size: 52px;
 	font-weight: 700;
 	text-align: center;
 }
 .header_slogan p{
-	font-family: Montserrat;
+	font-family: 'Montserrat-Light', sans-serif;
 	color: #ffffff;
 	font-size: 16px;
 	font-weight: 300;
 	line-height: 24px;
 	text-align: center;
+	margin-top: -10px;
+}
+.header_slogan-a{
+	display: block;
+	line-height: 56px;
+	margin: auto;
+	text-align: center;
+	width: 170px;
+	height: 53px;
+	background-color: #998675;
+	border-radius: 3px;
+	margin-top: 50px;
+	border-bottom: 3px solid #746358;
+}
+.header_slogan-a:hover{
+	background: #746358;
+}
+.header_slogan-a:active{
+	color: #c7b29a;
+	background: #13110F;
+	border-bottom: 3px solid #13110F;
+}
+.header_slider-slider{
+	width: 98px;
+	height: 15px;
+	margin: 0 auto;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+}
+.header_slider-slider a{
+	display: inline-block;
+	width: 11px;
+	height: 11px;
+	background-color: rgba(255, 255, 255, 0.6);
+	border-radius: 50%;
+	-webkit-background-origin: border-box;
+	background-origin: border-box;
+}
+.header_slider-slider a:hover{
+	border: 2px solid #d3c1ad;
+	background-color: rgba(0, 0, 0, 0);
+	transform: scale(1.1);
+	transition: 0.1s;
+	-webkit-background-origin: border-box;
+	background-origin: border-box;
+
+}
+
+.services{
+	margin: 80px 377px 80px 377px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+.services_item{
+	width: 266px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	position: relative;
+}
+.services_item:after{
+	content: '';
+	display: block;
+	width: 70px;
+	height: 3px;
+	background: #f1eee9;
+}
+.services_item-svg{
+	fill: #555;
+}
+.services_item span{
+	font-family: Raleway;
+	color: #555555;
+	font-size: 22px;
+	font-weight: 600;
+	text-align: center;
+	display: block;
+	margin-top: 30px;
+}
+.services_item p{
+	font-family: Montserrat;
+	color: #8c8c8c;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 24px;
+	text-align: center;
+	margin: 20px 0 30px 0;
+}
+.services_item:hover .services_item-svg{
+	fill: #c7b299;
+}
+.services_item:hover span{
+	color: #c7b299;
+}
+.services_item:hover:after{
+	background: #c7b299;
 }
