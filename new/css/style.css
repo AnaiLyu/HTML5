@@ -37,6 +37,7 @@
 body{
 	width: 1920px;
 	margin: 0 auto;
+	outline: none;
 }
 a{
 	text-decoration: none;
@@ -198,6 +199,7 @@ a{
 	display: block;
 	position: absolute;
 	z-index: 10;
+	outline: 2px solid blue;
 }
 .header_slogan{
 	width: 590px;
@@ -1403,10 +1405,12 @@ a{
 	}
 
 	.video_present{
-		height: 215px;
+		height: 235px;
 	}
 	.video_present-video{
-		height: 215px;
+		display: block;
+		height: 235px;
+		width: 110%;
 	}
 	.video_present-desc{
 		width: 100%;
